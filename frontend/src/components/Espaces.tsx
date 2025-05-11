@@ -4,38 +4,14 @@ const espaces = [
   {
     title: 'Bureaux privatifs',
     description: 'Espaces fermés haut de gamme pour entreprises établies.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-1/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/architectural-visualisation-nordic-house-bfaeaaa0fb724327a642ee7e435671a5/embed',
   },
   {
     title: 'Open-spaces modulables',
     description: 'Plateaux ouverts adaptables selon vos besoins.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-2/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/modern-studio-apartment-68864965414f487090d1f677adbb8029/embed',
   },
-  {
-    title: 'Coworking',
-    description: 'Espaces collaboratifs dédiés aux jeunes entreprises et start-ups.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-3/embed',
-  },
-  {
-    title: 'Innovation hubs',
-    description: 'Lieux d’échange et de prototypage, connectés à l’innovation.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-4/embed',
-  },
-  {
-    title: 'Salles de conférence',
-    description: 'Design acoustique, connectivité optimale pour vos événements.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-5/embed',
-  },
-  {
-    title: 'Commerces & restauration',
-    description: 'Zones animées en RDC et 1er étage, pour le quotidien des utilisateurs.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-6/embed',
-  },
-  {
-    title: 'Appartements rooftop',
-    description: 'Logements haut standing pour voyageurs d’affaires.',
-    renderUrl: 'https://sketchfab.com/models/your-model-id-7/embed',
-  }
+  
 ];
 
 export default function Espaces() {
