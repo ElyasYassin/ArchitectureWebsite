@@ -1,5 +1,8 @@
 import React from 'react';
 
+import galleryBg from './images/low-poly-grid-haikei.svg';
+import carteacc from './images/carteaccessiblite.png';
+
 export default function Accessibility() {
   return (
     <section className="px-6 py-16 max-w-6xl mx-auto">
@@ -7,7 +10,7 @@ export default function Accessibility() {
 
       <div className="mb-12">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!..." // Replace with real embed link
+          src="https://www.google.com/maps?q=36.718809,3.185756&z=15&output=embed" // Replace with real embed link
           title="The Link Location"
           className="w-full h-[400px] rounded shadow-md"
           loading="lazy"
@@ -32,12 +35,12 @@ export default function Accessibility() {
           </p>
           <div className="space-y-4">
             <img
-              src="/images/plan-masse.jpg" // Optional placeholder
+              src={carteacc} // Optional placeholder
               alt="Schéma d'insertion urbaine"
               className="rounded shadow"
             />
             <img
-              src="/images/diagramme-connexion.jpg" // Optional placeholder
+              src={carteacc}// Optional placeholder
               alt="Diagramme de connexion"
               className="rounded shadow"
             />

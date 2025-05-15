@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import galleryBg from './images/low-poly-grid-haikei.svg';
 
 const images = [
   {
@@ -43,8 +44,16 @@ export default function Gallery() {
     : images.filter(img => img.category === selected);
 
   return (
-    <section className="px-6 py-16">
-      <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">Galerie Visuelle</h2>
+    <section
+      className="px-6 py-16 relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${galleryBg}`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top',
+        backgroundSize: 'cover',
+      }}
+    >      
+    <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">Galerie Visuelle</h2>
 
       <div className="flex justify-center gap-3 mb-8 flex-wrap">
         {categories.map((cat, idx) => (

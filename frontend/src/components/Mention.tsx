@@ -11,7 +11,7 @@ export default function Mentions() {
           <p>
             Ce projet a été réalisé dans le cadre du Projet de Fin d’Études (PFE) à <strong>l’École Polytechnique d’Architecture et d’Urbanisme d’Alger</strong>.
             <br />
-            Encadré par <strong>Pr. Khaled Benyahia</strong> et <strong>Dr. Salima Touati</strong>.
+            Encadré par <strong>Mme.CHEBAIKI-ADLI. L            </strong> et <strong>Mme. MAZOUARA. A            </strong>.
           </p>
         </div>
 
@@ -19,11 +19,11 @@ export default function Mentions() {
           <h3 className="text-2xl font-semibold text-gray-800 mb-2">Logiciels Utilisés</h3>
           <ul className="list-disc pl-6">
             <li>Autodesk Revit</li>
-            <li>Rhino 3D</li>
             <li>V-Ray</li>
-            <li>Grasshopper</li>
-            <li>SketchUp</li>
             <li>Photoshop</li>
+            <li>Dynamo</li>
+            <li>Lumion</li>
+            <li>Twin Motion</li>
           </ul>
         </div>
 
@@ -46,3 +46,4 @@ export default function Mentions() {
     </section>
   );
 }
+

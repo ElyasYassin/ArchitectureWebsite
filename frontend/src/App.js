@@ -37,7 +37,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions" element={<Mention />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Footer from './Footer.tsx';
 
 import vid from './video/HomeVid.mp4';
 import facade1 from './images/facade1.jpg'
@@ -9,7 +10,8 @@ import facade4 from './images/facade4.jpg'
 
 export default function Home() {
   return (
-    <Parallax pages={3} style={{ top: 70}} className="relative">
+    <>
+    <Parallax pages={3} style={{}} className="relative">
 
       {/* Background layer (slow scroll) */}
       <ParallaxLayer
@@ -63,6 +65,6 @@ export default function Home() {
       </ParallaxLayer>
 
     </Parallax>
-
+    </>
   );
 }
