@@ -15,9 +15,8 @@ export default function Nav() {
       } p-4 flex justify-between items-center flex-wrap transition-all duration-300`}
     >
       <Link to="/home" className="flex items-center space-x-2">
-        <img src={logo} alt="The Link Logo" className="h-10 w-auto" />
+        <img src={logo} alt="The Link Logo" className="h-12 w-12" />
         <span className={`text-xl font-semibold ${isHome ? 'text-white' : 'text-gray-800'}`}>
-          The Link
         </span>
       </Link>
 
