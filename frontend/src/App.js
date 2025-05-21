@@ -27,6 +27,7 @@ function App() {
         {/* Possibly a layout that has a nav bar and a footer */}
         <Nav />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projet" element={<Projet />} />
           <Route path="/espaces" element={<Espaces />} />
