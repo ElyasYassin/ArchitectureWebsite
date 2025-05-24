@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Loader from './components/Loader.tsx';
+import { usePageLoader } from './hooks/usePageLoader.ts';
+
 // Layout Components
 import Nav from './components/Nav.tsx';
 import Footer from './components/Footer.tsx';
@@ -21,12 +24,15 @@ const allowedOrigins = [ "https://127.0.0.1:8080/"];
 
 
 function App() {
+
+  function AppRoutesWithLoader() {
+  const loading = usePageLoader(); // now safely inside <Router>
+
   return (
-    <Router>
-      <div>
-        {/* Possibly a layout that has a nav bar and a footer */}
-        <Nav />
-        <Routes>
+    <>
+      {loading && <Loader />}
+      <Nav />
+      <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projet" element={<Projet />} />
@@ -37,8 +43,16 @@ function App() {
           <Route path="/telechargements" element={<Brochures />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions" element={<Mention />} />
-        </Routes>
-      </div>
+      </Routes>
+      <Footer />
+    </>
+  );
+}
+
+
+  return (
+    <Router>
+      <AppRoutesWithLoader />
     </Router>
   );
 }

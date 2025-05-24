@@ -149,7 +149,7 @@ export default function Gallery() {
             >
               ✕ Fermer
             </button>
-            <img src={modalImg.src} alt={modalImg.alt} className="rounded w-full max-h-[80vh] object-contain" />
+            <img loading="lazy" src={modalImg.src} alt={modalImg.alt} className="rounded w-full max-h-[80vh] object-contain" />
             <div className="text-center mt-4">
               <a
                 href={modalImg.download}
