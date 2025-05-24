@@ -5,12 +5,12 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import type { Engine } from 'tsparticles-engine';
 
-import doubleskin from './images/technologies/1503-thick-skinned-5.jpg';
-import solar from './images/technologies/the-shade-store-solar.jpg';
-import eco from './images/technologies/stonecycling-bespoke-wastebasedbricks-colours-4-1768x1457.jpg';
-import energy from './images/technologies/premium_photo-1679607691186-4550451e13b7.avif';
-import thermal from './images/technologies/proxyclick-visitor-management-system-l90zRbWvCoE-unsplash.jpg';
-import smart from './images/technologies/amsterdam-city-archives-URnyBZCnlIs-unsplash.jpg';
+import doubleskin from './images/technologies/1503-thick-skinned-5.webp';
+import solar from './images/technologies/the-shade-store-solar.webp';
+import eco from './images/technologies/stonecycling-bespoke-wastebasedbricks-colours-4-1768x1457.webp';
+import energy from './images/technologies/premium_photo-1679607691186-4550451e13b7.webp';
+import thermal from './images/technologies/proxyclick-visitor-management-system-l90zRbWvCoE-unsplash.webp';
+import smart from './images/technologies/amsterdam-city-archives-URnyBZCnlIs-unsplash.webp';
 import bg from './images/gleb-paniotov-gl4_SwF3EYA-unsplash.jpg'
 
 export default function Technologies() {
@@ -72,15 +72,15 @@ export default function Technologies() {
     />
     
       {/* Foreground Content */}
-      <section className="relative z-10 px-6 py-40 max-w-6xl mx-auto">
+      <section className="relative z-20 px-6 py-40 max-w-6xl mx-auto">
 
-        <Grid container spacing={4} justifyContent="center">
+        <Grid container spacing={6} justifyContent="center">
           {features.map((item, idx) => (
             <Grid item xs={12} sm={6} md={4} key={idx} sx={{ display: 'flex', justifyContent: 'center' }}>
               <Card
                 sx={{
                   width: 300,
-                  borderRadius: 3,
+                  borderRadius: 6,
                   boxShadow: 3,
                   transition: 'transform 0.3s ease',
                   '&:hover': {
@@ -91,10 +91,14 @@ export default function Technologies() {
               >
                 <CardMedia
                   component="img"
-                  height="140"
                   image={item.image}
                   alt={item.title}
-                  sx={{ borderTopLeftRadius: 12, borderTopRightRadius: 12 }}
+                  sx={{
+                    height: 250, 
+                    objectFit: 'cover', 
+                    borderTopLeftRadius: 12,
+                    borderTopRightRadius: 12,
+                  }}
                 />
                 <CardContent sx={{ py: 2 }}>
                   <Typography variant="h6" component="h3" gutterBottom>
