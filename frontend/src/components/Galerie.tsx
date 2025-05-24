@@ -4,24 +4,35 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import type { Engine } from 'tsparticles-engine';
 
+import facade1 from './images/outside1.png';
+import facade2 from './images/outside2.png';
+import facade3 from './images/outside3.png';
+import facade4 from './images/outside4.png';
+
 const images = [
   {
     category: 'Façade',
-    src: 'https://images.unsplash.com/photo-1594365387374-321d9f531806?q=80&w=2590&auto=format&fit=crop',
+    src:  facade1,
     alt: 'Façade – Jour',
-    download: 'https://images.unsplash.com/photo-1594365387374-321d9f531806?q=80&w=2590&auto=format&fit=crop',
+    download: facade1
   },
   {
     category: 'Façade',
-    src: 'https://images.unsplash.com/photo-1617893423712-9667576ffc1e?q=80&w=2574&auto=format&fit=crop',
+    src: facade2,
     alt: 'Façade – Nuit',
-    download: 'https://images.unsplash.com/photo-1617893423712-9667576ffc1e?q=80&w=2574&auto=format&fit=crop',
+    download: facade2,
   },
   {
     category: 'Façade',
-    src: 'https://images.unsplash.com/photo-1743006501109-44519f27479a?q=80&w=2650&auto=format&fit=crop',
+    src:facade3,
     alt: 'Façade – Nuit 2',
-    download: 'https://images.unsplash.com/photo-1743006501109-44519f27479a?q=80&w=2650&auto=format&fit=crop',
+    download:facade3,
+  },
+    {
+    category: 'Façade',
+    src:facade4,
+    alt: 'Façade – Nuit 2',
+    download:facade4,
   },
   {
     category: 'Atrium',
