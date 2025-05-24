@@ -1,17 +1,13 @@
 import React, { useCallback } from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 
-import Particles from 'react-tsparticles';
-import { loadSlim } from 'tsparticles-slim';
-import type { Engine } from 'tsparticles-engine';
-
+import bg from './images/gleb-paniotov-gl4_SwF3EYA-unsplash.jpg'
 import doubleskin from './images/technologies/1503-thick-skinned-5.webp';
 import solar from './images/technologies/the-shade-store-solar.webp';
 import eco from './images/technologies/stonecycling-bespoke-wastebasedbricks-colours-4-1768x1457.webp';
 import energy from './images/technologies/premium_photo-1679607691186-4550451e13b7.webp';
 import thermal from './images/technologies/proxyclick-visitor-management-system-l90zRbWvCoE-unsplash.webp';
 import smart from './images/technologies/amsterdam-city-archives-URnyBZCnlIs-unsplash.webp';
-import bg from './images/gleb-paniotov-gl4_SwF3EYA-unsplash.jpg'
 
 export default function Technologies() {
 

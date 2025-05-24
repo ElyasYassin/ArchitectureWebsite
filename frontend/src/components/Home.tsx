@@ -3,10 +3,10 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Footer from './Footer.tsx';
 
 import vid from './video/HomeVid.mp4';
-import facade1 from './images/facade1.jpg'
-import facade2 from './images/facade2.jpg'
-import facade3 from './images/facade3.jpg'
-import facade4 from './images/facade4.jpg'
+import facade1 from './images/facade1.webp'
+import facade2 from './images/facade2.webp'
+import facade3 from './images/facade3.webp'
+import facade4 from './images/facade4.webp'
 
 export default function Home() {
   return (

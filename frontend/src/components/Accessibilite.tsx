@@ -1,7 +1,7 @@
 import React from 'react';
 
-import carteacc from './images/carteaccessiblite.png';
 import accbg from './images/weyne-yew.jpg'
+import carteacc from './images/carteaccessiblite.png';
 
 
 export default function Accessibility() {
