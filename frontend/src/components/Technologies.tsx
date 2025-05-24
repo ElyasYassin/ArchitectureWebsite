@@ -11,11 +11,9 @@ import eco from './images/technologies/stonecycling-bespoke-wastebasedbricks-col
 import energy from './images/technologies/premium_photo-1679607691186-4550451e13b7.avif';
 import thermal from './images/technologies/proxyclick-visitor-management-system-l90zRbWvCoE-unsplash.jpg';
 import smart from './images/technologies/amsterdam-city-archives-URnyBZCnlIs-unsplash.jpg';
+import bg from './images/gleb-paniotov-gl4_SwF3EYA-unsplash.jpg'
 
 export default function Technologies() {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
 
   const features = [
     {
@@ -51,41 +49,28 @@ export default function Technologies() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-black">
-      {/* Background Particles */}
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          fullScreen: { enable: false },
-          background: { color: { value: '#000000' } },
-          fpsLimit: 30,
-          particles: {
-            color: { value: '#ffffff' },
-            links: {
-              enable: true,
-              color: '#ffffff',
-              distance: 100,
-              opacity: 0.3,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 1,
-              outModes: { default: 'bounce' },
-            },
-            number: {
-              value: 40,
-              density: { enable: true, area: 800 },
-            },
-            size: { value: { min: 1, max: 4 } },
-            opacity: { value: 0.5 },
-          },
-          detectRetina: true,
-        }}
-        className="absolute inset-0 z-0 pointer-events-none"
-      />
-
+     <section
+          className="min-h-screen"
+          style={{
+            backgroundImage: `url(${bg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',  
+            height: '100vh',               
+            overflow: 'hidden',           
+          }}
+        >
+    {/* Blurred glass effect wrapper */}
+    <div
+      className="absolute inset-0"
+      style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        backdropFilter: 'blur(8px)', 
+        WebkitBackdropFilter: 'blur(8px)',
+        zIndex: 1,
+      }}
+    />
+    
       {/* Foreground Content */}
       <section className="relative z-10 px-6 py-40 max-w-6xl mx-auto">
 
