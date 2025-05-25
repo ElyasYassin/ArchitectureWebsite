@@ -1,4 +1,5 @@
 import React from 'react';
+import HotelMap from './HotelMap.tsx';
 
 export default function Project() {
   return (
@@ -36,6 +37,10 @@ export default function Project() {
               <li><strong>Flexibilité</strong> : Espaces modulables, adaptables à tous types d’entreprises.</li>
             </ul>
           </div>
+          <div className="mt-16">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-800 text-center">Repérage des lieux</h3>
+            <HotelMap />
+        </div>
         </div>
       </div>
     </section>

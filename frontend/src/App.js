@@ -8,7 +8,7 @@ import { usePageLoader } from './hooks/usePageLoader.ts';
 import Nav from './components/Nav.tsx';
 import Footer from './components/Footer.tsx';
 
-
+import HotelMap from './components/HotelMap.tsx';
 import Projet from './components/Projet.tsx';
 import Espaces from './components/Espaces.tsx';
 import Home from './components/Home.tsx';
@@ -39,6 +39,7 @@ function App() {
           <Route path="/espaces" element={<Espaces />} />
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/accessibilite" element={<Accessibilite  />} />
+          <Route path="/map" element={<HotelMap />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/telechargements" element={<Brochures />} />
           <Route path="/contact" element={<Contact />} />
