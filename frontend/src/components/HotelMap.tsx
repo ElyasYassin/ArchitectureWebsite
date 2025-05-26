@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import mapImage from './images/site-plan.png'; 
-import marriottImg from './images/hotels/mariot.png'; 
-import mercureImg from './images/hotels/mercure.png';
-import ibisImg from './images/hotels/ibis.png'; 
-import orientalImg from './images/hotels/oriental.png';
-import mallImg from './images/hotels/mall.png'; 
-import bnpImg from './images/hotels/BNPparibas.png';
-import mobilisImg from './images/hotels/mobilis.png'; 
+import mapImage from './images/site-plan.webp'; 
+import marriottImg from './images/hotels/mariot.webp'; 
+import mercureImg from './images/hotels/mercure.webp';
+import ibisImg from './images/hotels/ibis.webp'; 
+import orientalImg from './images/hotels/oriental.webp';
+import mallImg from './images/hotels/mall.webp'; 
+import bnpImg from './images/hotels/BNPparibas.webp';
+import mobilisImg from './images/hotels/mobilis.webp'; 
 
 
 const hotspots = [
