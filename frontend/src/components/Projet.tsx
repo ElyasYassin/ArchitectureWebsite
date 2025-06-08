@@ -29,7 +29,7 @@ export default function Project() {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8 text-center">
                 <strong className="text-blue-600">The Link</strong> est bien plus qu'un simple centre d'affaires. 
-                C'est un écosystème d'innovation situé au cœur stratégique de Bab Ezzouar, 
+                C'est un écosystème d\'innovation situé au cœur stratégique de Bab Ezzouar, 
                 conçu pour séduire les entreprises les plus ambitieuses et les investisseurs visionnaires.
               </p>
               
