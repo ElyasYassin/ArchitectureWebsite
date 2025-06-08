@@ -21,6 +21,21 @@ const espaces = [
   },
 ];
 
+const publics = [
+  {
+    title: 'Hall principal & Atrium',
+    description: 'Espace majestueux pour l’accueil des visiteurs et la circulation fluide entre les niveaux.',
+    highlights: ['Luminosité naturelle', 'Volumes généreux'],
+    renderUrl: 'https://sketchfab.com/3d-models/office-atrium-51892e07018d43f9867879cc1a390d12/embed',
+  },
+  {
+    title: 'Rooftop & Terrasse végétalisée',
+    description: 'Un lieu de détente panoramique offrant une vue imprenable sur la ville.',
+    highlights: ['Végétation', 'Vue panoramique', 'Espace événementiel'],
+    renderUrl: 'https://sketchfab.com/3d-models/vr-rooftop-hangout-da1882dda1b04a96927155f665280fb8/embed',
+  },
+];
+
 export default function Espaces() {
   return (
     <section className="px-6 py-16 max-w-6xl mx-auto">
@@ -82,6 +97,36 @@ export default function Espaces() {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Section: Espaces Publics */}
+        <div className="mt-24">
+          <h2 className="text-4xl font-bold mb-4 text-center text-gray-900">Espaces Publics</h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Des lieux de vie et de rencontre pour enrichir l’expérience des usagers du bâtiment.
+          </p>
+
+          <div className="grid gap-12 md:grid-cols-2">
+            {publics.map((espace, idx) => (
+              <div key={idx} className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+                <div className="aspect-video mb-4">
+                  <iframe
+                    src={espace.renderUrl}
+                    title={espace.title}
+                    className="w-full h-full rounded"
+                    allow="autoplay; fullscreen; vr"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{espace.title}</h3>
+                <p className="text-gray-600 mb-4">{espace.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {espace.highlights.map((tag, i) => (
+                    <span key={i} className="bg-gray-100 text-sm text-gray-800 px-3 py-1 rounded-full">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
     </section>
