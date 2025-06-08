@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {useLocation, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Loader from './components/Loader.tsx';
 import { usePageLoader } from './hooks/usePageLoader.ts';
@@ -26,29 +26,30 @@ const allowedOrigins = [ "https://127.0.0.1:8080/"];
 function App() {
 
   function AppRoutesWithLoader() {
-  const loading = usePageLoader(); // now safely inside <Router>
+    const loading = usePageLoader();
+    const location = useLocation();
 
-  return (
-    <>
-      {loading && <Loader />}
-      <Nav />
-      <Routes>
+    return (
+      <>
+        {loading && <Loader />}
+        <Nav />
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projet" element={<Projet />} />
           <Route path="/espaces" element={<Espaces />} />
           <Route path="/galerie" element={<Galerie />} />
-          <Route path="/accessibilite" element={<Accessibilite  />} />
+          <Route path="/accessibilite" element={<Accessibilite />} />
           <Route path="/map" element={<HotelMap />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/telechargements" element={<Brochures />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/mentions" element={<Mention />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-}
+        </Routes>
+        {location.pathname !== '/' && location.pathname !== '/home' && <Footer />}
+      </>
+    );
+  }
 
 
   return (
