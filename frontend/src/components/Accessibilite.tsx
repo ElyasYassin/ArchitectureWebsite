@@ -42,7 +42,7 @@ export default function Accessibility() {
               />
             </div>
             <iframe
-              src="https://www.google.com/maps?q=36.718809,3.185756&z=15&output=embed"
+              src="https://www.google.com/maps?q=36.712256, 3.195533&z=15&output=embed"
               title="The Link Location"
               className="w-full h-[300px] rounded shadow"
               loading="lazy"
