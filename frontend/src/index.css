@@ -11,6 +11,18 @@
   
   body {
     @apply antialiased;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Remove default margins and ensure full height */
+  * {
+    box-sizing: border-box;
+  }
+
+  #root {
+    min-height: 100vh;
   }
 }
 
@@ -57,6 +69,30 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  /* Parallax specific styles */
+  .parallax-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* Ensure seamless background coverage */
+  .parallax-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+  }
 }
 
 @layer utilities {
@@ -78,6 +114,21 @@
 
   .animate-pulse-slow {
     animation: pulse 3s infinite;
+  }
+
+  /* Remove any potential gaps */
+  .no-gap {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+  }
+
+  /* Full height utilities */
+  .h-screen-safe {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
   }
 }
 
@@ -130,4 +181,38 @@
   transition-property: transform, opacity, background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+/* Parallax specific fixes */
+.react-spring-parallax-container {
+  overflow: hidden !important;
+}
+
+.react-spring-parallax-layer {
+  overflow: hidden;
+}
+
+/* Ensure no white space between sections */
+.react-spring-parallax-container > div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll; /* Fixed backgrounds can cause issues on mobile */
+  }
+  
+  .h-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
