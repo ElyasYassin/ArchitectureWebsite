@@ -9,7 +9,7 @@ const espaces = [
     surfaceUnitaire: '200 m²',
     nombreUnites: '6 par niveau',
     surfaceTotale: '1200 m² / niveau',
-    renderUrl: 'https://sketchfab.com/3d-models/loft-apartment-44e7a9cfed67431e827d0cbaabd462c7/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/patio-office-baking-b2fd37fb9f824487a0dacb9bc8d66fe6/embed?autostart=0&preload=1',
     color: 'blue',
   },
   {
@@ -20,7 +20,7 @@ const espaces = [
     surfaceUnitaire: '250 m²',
     nombreUnites: '4 par niveau',
     surfaceTotale: '1000 m² / niveau',
-    renderUrl: 'https://sketchfab.com/3d-models/office-ea1d5422c80141aa8ec2478cc359fe41/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/conference-room-da862325a9dd4e8baa638fb72b9b2325/embed?autostart=0&preload=1',
     color: 'purple',
   },
 ];
@@ -31,7 +31,7 @@ const publics = [
     subtitle: 'Espace d\'Accueil Majestueux',
     description: 'Un espace architectural impressionnant pour l\'accueil des visiteurs et la circulation fluide entre les niveaux, baigné de lumière naturelle.',
     highlights: ['Luminosité naturelle', 'Volumes généreux', 'Design contemporain'],
-    renderUrl: 'https://sketchfab.com/3d-models/office-atrium-51892e07018d43f9867879cc1a390d12/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/vr-school-classroom-auditorium-with-stage-d5072440c32d4ca8b6ae1023fcc36dc3/embed?autostart=0&preload=1',
     color: 'green',
   },
   {
@@ -39,7 +39,7 @@ const publics = [
     subtitle: 'Vue Panoramique Exceptionnelle',
     description: 'Un lieu de détente et d\'événements offrant une vue imprenable sur la ville, avec espaces verts et aménagements haut de gamme.',
     highlights: ['Végétation luxuriante', 'Vue panoramique', 'Espace événementiel', 'Détente premium'],
-    renderUrl: 'https://sketchfab.com/3d-models/vr-rooftop-hangout-da1882dda1b04a96927155f665280fb8/embed',
+    renderUrl: 'https://sketchfab.com/3d-models/vr-rooftop-hangout-da1882dda1b04a96927155f665280fb8/embed?autostart=0&preload=1',
     color: 'yellow',
   },
 ];

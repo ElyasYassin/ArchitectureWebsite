@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-const routesWithLoader = ['/home','/accessibilite', '/galerie', '/technologies'];
+const routesWithLoader = ['/home','/accessibilite','/espaces', '/galerie', '/technologies'];
 
 export function usePageLoader(delay = 1000) {
   const location = useLocation();
