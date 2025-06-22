@@ -32,11 +32,9 @@ export default function Accessibility() {
       {/* Main Content */}
       <section className="section-padding">
         <div className="container-max">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            
-
+          <div className="grid lg:grid-cols-1 gap-16 items-start">
             {/* Maps and Visuals */}
-            <div className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {/* Accessibility Map */}
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
                 <div className="p-8 pb-0">
@@ -77,7 +75,7 @@ export default function Accessibility() {
                     <iframe
                       src="https://www.google.com/maps?q=36.712256, 3.195533&z=15&output=embed"
                       title="The Link Location"
-                      className="w-full h-[400px] border-0"
+                      className="w-full h-[685px] border-0"
                       loading="lazy"
                     />
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md rounded-lg px-4 py-2">
