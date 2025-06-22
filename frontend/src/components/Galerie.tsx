@@ -4,67 +4,73 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import type { Engine } from 'tsparticles-engine';
 
-import facade1 from './images/outside1.png';
-import facade2 from './images/outside2.png';
-import facade3 from './images/outside3.png';
-import facade4 from './images/outside4.png';
+import outside1 from './images/gallery/1_1.png';
+import outside2 from './images/gallery/1_2.png';
+import outside3 from './images/gallery/1_3.png';
+import outside4 from './images/gallery/1_4.png';
+
+import newOutside1 from './images/outside1.png';
+import newOutside2 from './images/outside2.png';
+import newOutside3 from './images/outside3.png';
+import newOutside4 from './images/outside4.png';
+
 
 const images = [
   {
     category: 'Façade',
-    src: facade1,
-    alt: 'Façade – Vue de jour',
-    download: facade1,
+    src: outside1,
+    alt: 'Façade – Vue principale de jour',
+    download: outside1,
     description: 'Vue principale de la façade en lumière naturelle'
   },
   {
     category: 'Façade',
-    src: facade2,
+    src: outside2,
     alt: 'Façade – Vue de nuit',
-    download: facade2,
+    download: outside2,
     description: 'Éclairage architectural nocturne'
   },
   {
     category: 'Façade',
-    src: facade3,
-    alt: 'Façade – Perspective urbaine',
-    download: facade3,
-    description: 'Intégration dans le paysage urbain'
+    src: outside3,
+    alt: 'Façade – Crépuscule urbain',
+    download: outside3,
+    description: 'Perspective urbaine au crépuscule'
   },
   {
     category: 'Façade',
-    src: facade4,
-    alt: 'Façade – Détail architectural',
-    download: facade4,
-    description: 'Détails de la façade intelligente'
+    src: outside4,
+    alt: 'Façade – Vue arrière un jour nuageux',
+    download: outside4,
+    description: 'Façade exposée à la lumière diffuse d’un jour couvert'
+  },
+   {
+    category: 'Façade',
+    src: newOutside1,
+    alt: 'Façade – Vue grand angle au matin',
+    download: newOutside1,
+    description: 'Vue dégagée du bâtiment dans son environnement urbain'
   },
   {
-    category: 'Atrium',
-    src: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg',
-    alt: 'Atrium intérieur',
-    download: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg',
-    description: 'Hall principal avec verrière'
+    category: 'Façade',
+    src: newOutside2,
+    alt: 'Façade – Côté verre et structure métallique',
+    download: newOutside2,
+    description: 'Angle mettant en avant la transparence et les reflets'
   },
   {
-    category: 'Rooftop',
-    src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
-    alt: 'Vue rooftop',
-    download: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
-    description: 'Terrasse végétalisée avec vue panoramique'
+    category: 'Façade',
+    src: newOutside3,
+    alt: 'Façade – Entrée principale et parvis',
+    download: newOutside3,
+    description: 'Vue immersive depuis l’accès frontal'
   },
   {
-    category: 'Espaces de travail',
-    src: 'https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg',
-    alt: 'Espaces de travail',
-    download: 'https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg',
-    description: 'Open space moderne et lumineux'
-  },
-  {
-    category: 'Espaces de travail',
-    src: 'https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg',
-    alt: 'Salle de réunion',
-    download: 'https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg',
-    description: 'Salle de réunion avec vue'
+    category: 'Façade',
+    src: newOutside4,
+    alt: 'Façade – Vue arrière sous lumière naturelle',
+    download: newOutside4,
+    description: 'Arrière du bâtiment et détails structurels'
   },
 ];
 
