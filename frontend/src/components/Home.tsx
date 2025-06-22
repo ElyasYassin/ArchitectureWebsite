@@ -13,10 +13,17 @@ export default function Home() {
       {/* Hero Section Background */}
       <ParallaxLayer offset={0} speed={0.1} factor={1}>
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-            <source src={homevid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover"
+            >
+              <source src="https://files.catbox.moe/4sysdj.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           <div className="absolute inset-0 bg-black/50 z-10" />
         </div>
       </ParallaxLayer>
