@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-0 px-6">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
@@ -61,85 +61,6 @@ export default function Project() {
             </div>
           </div>
 
-          {/* Key Features */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl shadow-lg p-8 card-hover">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xl">📍</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Positionnement Stratégique</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      À seulement 10 minutes de l'aéroport international d'Alger, avec un accès direct 
-                      au métro, tramway et aux grands axes autoroutiers. Une localisation privilégiée 
-                      dans une zone à fort potentiel de développement économique.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-lg p-8 card-hover">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <span className="text-white text-xl">🏗️</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Architecture d'Excellence</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      Inspiré des projets emblématiques comme la Tour Hekla à Paris ou les immeubles 
-                      de La Défense, The Link s'impose par sa modernité architecturale et son 
-                      écosystème intelligent intégré.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl shadow-lg p-8 card-hover">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Nos Valeurs Fondamentales</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="font-semibold text-gray-900">Connectivité</span>
-                    <span className="text-gray-600">— Réseaux intelligents intégrés</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="font-semibold text-gray-900">Durabilité</span>
-                    <span className="text-gray-600">— Performance énergétique de pointe</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="font-semibold text-gray-900">Flexibilité</span>
-                    <span className="text-gray-600">— Espaces modulables et adaptables</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                    <span className="font-semibold text-gray-900">Innovation</span>
-                    <span className="text-gray-600">— Technologies de demain</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Prêt à Investir ?</h3>
-                <p className="mb-6 opacity-90">
-                  Découvrez les opportunités d'investissement et de location dans ce projet d'exception.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="/contact" className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors text-center">
-                    Nous contacter
-                  </a>
-                  <a href="/espaces" className="border border-white/30 px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors text-center">
-                    Voir les espaces
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Location Map */}
           <div className="bg-white rounded-3xl shadow-xl p-12">

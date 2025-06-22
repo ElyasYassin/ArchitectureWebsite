@@ -55,7 +55,7 @@ export default function Espaces() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-0 px-6">
         <div className="container-max">
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
