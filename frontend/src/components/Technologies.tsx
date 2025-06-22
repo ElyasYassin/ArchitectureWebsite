@@ -138,12 +138,6 @@ export default function Technologies() {
       {/* Category Filter */}
       <section className="section-padding bg-white">
         <div className="container-max">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Catégories Technologiques</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explorez nos innovations par domaine d'application
-            </p>
-          </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             {categories.map((category) => (
@@ -276,71 +270,7 @@ export default function Technologies() {
         </div>
       )}
 
-      {/* Innovation Section */}
-      <section className="section-padding bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">L'Innovation au Service du Confort</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Chaque technologie intégrée dans The Link a été sélectionnée pour créer un environnement 
-              de travail exceptionnel, alliant performance énergétique et bien-être des occupants.
-            </p>
-          </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🌱</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Durabilité</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Réduction de 60% de l'empreinte carbone grâce à nos matériaux innovants et systèmes énergétiques.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🤖</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Intelligence</h3>
-              <p className="text-gray-700 leading-relaxed">
-                IA intégrée pour l'optimisation automatique de tous les systèmes du bâtiment en temps réel.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">⚡</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Performance</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Systèmes haute performance garantissant confort optimal et économies d'énergie maximales.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="section-padding">
-        <div className="container-max">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-center text-white">
-            <h2 className="text-3xl font-bold mb-6">Découvrez The Link en Action</h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Visitez notre showroom technologique et découvrez comment ces innovations 
-              transforment l'expérience de travail au quotidien.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
-                Réserver une démonstration
-              </a>
-              <a href="/espaces" className="border border-white/30 px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors">
-                Explorer les espaces
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
